@@ -29,7 +29,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger"  href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publication">Publication</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Reserach">reserach</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reserach">Reserach</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                 </ul>
@@ -146,12 +146,16 @@
             <!-- reserach-->
             <section class="resume-section" id="reserach">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
+                    <h2 class="mb-5">Research Projects</h2>
                     <div class="subheading mb-3"> <span class="text-primary">Multimodal Humor Understanding</span></div>
                     
                     <p >
                     <img src="assets/img/urfunny.png" style="width:20%;height:15%; float: right; " />
-                    Machine learning models are given a sequence of sentences along with visual and acoustic modalities. The goal is to detect whether the sequence will trigger immediate laughter after the punchline. I introduced UR-FUNNY the first multimodal humor detection dataset and designed new ML algorithms to detect humor in video utterance.
+                    Recognizing humor from a video requires understanding the verbal and non-verbal components as well as incorporating the appropriate background context. We have introduced UR-FUNNY- the first video dataset for humor detection task. 8257 humorous punchlines are presented, along with the prior sentences that build up their respective contexts. As negative data samples, 8257 non-humourous excerpts are also presented, where the last sentences are not followed by laughters. Total duration of the dataset is 90 hours. Importantly, unlike previous datasets where negative samples were drawn from different domains, UR-FUNNY draws the negative samples from the same videos as the humorous ones. This dataset has been collected from 1,866 videos featuring 1,741 TED Talks speakers using audience laughter signal. UR-FUNNY opens the door to the research community for studying multimodal cues involved in expressing humor.</br>
+                    
+                    We have developed a deep learning model to detect humor from the video utterance. The model is given a sequence of sentences (background context + punchline) along with vision and acoustic modalities. The goal is to detect whether the sequence will trigger immediate laughter after the punchline. The model has three components. The Unimodal Context Network has three LSTM (Long Short Term Memory) for capturing the unimodal summary of language, acoustic and vision used in background context. Then, Multimodal Context Summary use self attention mechanism to capture the interactions across these three modalities and create multimodal summary of background context. The last component is Memory Fusion Network that takes the language, acoustic and vision features used in punchline and try to predict the if the punchline is funny or not. During modeling punchline, it also takes input the unimodal and multimodal summary of context from the previous two component. That is the way it makes sure that punchline is model in light of context story. </br>
+
+                    Using this model we ran experiments to understand the importance of each modalities as well as the background context. We have found that all of these components are crucial for understanding the punchline of a joke.
                     </p> 
 
                 </div>
