@@ -160,6 +160,7 @@
                         <img src="assets/img/urfunny.png" style="width:35%;height:25%; float: right; " />
                     </div>
 
+                    </br></br>
                     <div class="subheading mb-3"> <span class="text-primary">Multimodal Sentiment Analysis</span></div>
                     <div>
                         <p style="font-size:14px;width:65%;float:left;";>
@@ -167,8 +168,8 @@
                         Human face-to-face communication is a complex multimodal signal. We use words (language modality), gestures (vision modality) and changes in tone (acoustic modality) to convey our intentions. Humans easily process and understand the emotion involved in face-to-face communication, however, comprehending this form of communication remains a significant challenge for Artificial Intelligence (AI). AI must understand each modality and the interactions between them that shape the contextual interpretation of our intention and emotions. </br>
                         Recent Transformer based contextual word representations, including BERT and XLNet, have shown state-of-the-art performance in multiple disciplines within NLP. Fine-tuning the trained contextual models on task-specific datasets has been the key to achieving superior performance downstream. However, these pretrained models only work with language and do not have necessary component to accept other modalities like vision and acoustic.We designed an attachment to BERT and XLNet called Multimodal Adaptation Gate (MAG). MAG allows BERT and XLNet to accept multimodal nonverbal data during fine-tuning. It does so by generating a shift to internal representation of BERT and XLNet; a shift that is conditioned on the visual and acoustic modalities. During fine-tuning, this shifted vector modifies the internal state of the BERT and XLNet, allowing the models to seamlessly adapt to the multimodal input. </br>
                         In our experiments, we study the commonly used CMU-MOSI and CMU-MOSEI datasets for multimodal sentiment analysis. Fine-tuning MAG-BERT and MAG-XLNet significantly boosts the sentiment analysis performance. We have achieved superior performance on both datasets compare to the all baselines methods and establish new state or the art baseline. On the CMU-MOSI dataset, MAG-XLNet achieves human level multimodal sentiment analysis performance for the first time in the NLP community.
-                                                </p> 
-                        <img src="assets/img/mbert.png" style="width:35%;height:30%; float: right; " />
+                        </p> 
+                        <img src="assets/img/mbert.png" style="width:35%;height:15%; float: right; " />
                     </div>
 
                 </div>
