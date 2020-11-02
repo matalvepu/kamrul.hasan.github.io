@@ -150,7 +150,7 @@
 <!--                     <div class="subheading mb-3"> <span class="text-primary">Multimodal Humor Understanding</span></div> -->
                     <div>
 
-                        <span class="text-primary" style="font-size:15px;float:left;">Multimodal Humor Understanding</span> </br></br>
+                        <span class="text-primary" style="font-size:20px;float:left;">Multimodal Humor Understanding</span> </br></br>
                         
                         <img src="assets/img/urfunny.png" style="width:35%;height:25%; float: right; " /><p style="font-size:14px;width:65%;float:left;";>
                         
@@ -158,7 +158,7 @@
                         
                         Deeveloped Contextual Memory Fusion Network to detect humor from the video utterance. Using this model we ran experiments to understand the importance of each modalities as well as the background context. </br></br>
 
-                        Publications: <b class="text-primary">EMNLP-IJCNLP, 2019</b>  </br>
+                        Publications:  <a href="https://www.aclweb.org/anthology/D19-1211/" style="color:blue; text-decoration: underline;">EMNLP-IJCNLP, 2019</a> </br>
                         </p> 
                         
                     </div>
@@ -168,14 +168,14 @@
 
                     <div class="justify-content-between" style="padding-top: 20px;padding-bottom: 20px; float : left;">
 
-                        <span class="text-primary" style="font-size:15px; float:left;">Multimodal Transformer for Sentiment Analysis</span>  <br><br>
+                        <span class="text-primary" style="font-size:20px; float:left;">Multimodal Transformer for Sentiment Analysis</span>  <br><br>
                     
                         <p style="font-size:14px;width:70%;float:left;";>
 
                         Transformer based pretrained language models like BERT and XLNet do not have necessary components to accept other modalities like vision and acoustic. We designed Multimodal Adaptation Gate (MAG) that allows BERT and XLNet to accept multimodal nonverbal data during fine-tuning. It does so by generating a shift to internal representation of BERT and XLNet; a shift that is conditioned on the visual and acoustic modalities. </br>
                        
                         We have achieved superior performance on both CMU-MOSI and CMU-MOSEI datasets (commonly used datasets for multimodal sentiment analysis). On the CMU-MOSI dataset, MAG-XLNet achieves human level multimodal sentiment analysis performance for the first time in the NLP community.  </br> </br>
-                        Publications: <b class="text-primary">ACL, 2020</b>  </br>
+                        Publications:<a href="https://www.aclweb.org/anthology/2020.acl-main.214/" style="color:blue; text-decoration: underline;">ACL, 2020</a>  </br>
                         </p> 
                         <img src="assets/img/mbert.png" style="width:23%;height:10%; float: right; " />
                     </div>
@@ -185,7 +185,7 @@
 
                     <div class="justify-content-between" style="padding-top: 20px;padding-bottom: 20px; float : left;">
 
-                        <span class="text-primary" style="font-size:15px; float:left;">Humor Knowledge Enriched Transformer</span>  <br><br>
+                        <span class="text-primary" style="font-size:20px; float:left;">Humor Knowledge Enriched Transformer</span>  <br><br>
                     
                         <p style="font-size:14px;width:70%;float:left;";>
 
@@ -199,16 +199,33 @@
 
                      <div class="justify-content-between" style="padding-top: 20px;padding-bottom: 20px; float : left;">
 
-                        <span class="text-primary" style="font-size:15px; float:left;">Unsupervised Text Segmentation</span>  <br><br>
+                        <span class="text-primary" style="font-size:20px; float:left;">Unsupervised Text Segmentation</span>  <br><br>
                    
-                        <p style="font-size:14px;width:65%;float:left;";>
+                        <p style="font-size:14px;width:70%;float:left;";>
 
                         Breaking down long text into semantically coherent segments is very useful for downstream applications like summarization and information retrieval. We designed unsupervised text segmentation algorithm named Coherence aware BERT (C-BERT) Tiling that takes advantage of the pre-trained BERT language model to find topical shifts in a document. The next sentence prediction objective of BERT trained on billions of text is used to measure coherence between adjacent text segments. These locally attended coherence scores is utilized to identify the semantic discourses in a document of arbitrary length without learning dataset specific distribution. We establish a new state-of-the-art results in three standard datasets, thus facilitating real-world applications.
                         </br> </br>
                         Publications: <b >EACL, 2021 (Under Review)</b>  </br>
                         </p> 
 
-                        <img src="assets/img/coherence.png" style="width:25%;height:20%; float: right; " />
+                        <img src="assets/img/coherence.png" style="width:30%;height:20%; float: right; " />
+                    </div>
+
+                     </br></br>
+
+                     <div class="justify-content-between" style="padding-top: 20px;padding-bottom: 20px; float : left;">
+
+                        <span class="text-primary" style="font-size:20px; float:left;">Credibility Understanding</span>  <br><br>
+                   
+                        <p style="font-size:14px;width:65%;float:left;";>
+
+                        The baseline facial expression pattern can help to understand credibility during real interrogation. In an interrogation game, the interrogator ask baseline questions before the main interrogation. First, we trained a LSTM to model baseline facial expression sequences. Using a <b>transfer learning</b> approach, the pretrained model from the baseline used to extract face embedding during the main interrogation and predict truth vs bluff.
+
+                        </br> </br>
+                        Publications:<a href="http://hoques.com/Publications/2019/2019-Mental-face-Hasan-etal-ACII.pdf" style="color:blue; text-decoration: underline;">ACII, 2019</a>  </br>
+                        </p> 
+
+                        <img src="assets/img/fbindex.png" style="width:30%;height:20%; float: right; " />
                     </div>
 
                 </div>
